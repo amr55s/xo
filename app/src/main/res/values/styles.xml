@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- MAIN APP THEME -->
+    <style name="Theme.AmrXO" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+
+        <!-- مهم: لازم أبيض علشان Dark Mode -->
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+
+        <!-- Pixel Font -->
+        <item name="android:fontFamily">@font/press_start_2p</item>
+    </style>
+
+
+    <!-- PIXEL BUTTON STYLE -->
+    <style name="PixelButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#333333</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/press_start_2p</item>
+        <item name="android:textSize">12sp</item>
+
+        <!-- الزوايا تبقى مربعة بدون أي انحناء -->
+        <item name="shapeAppearance">@style/PixelShape</item>
+        <item name="cornerFamily">rounded</item>
+
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+
+    <!-- مربع (درس) بسيط لكل العناصر -->
+    <style name="PixelShape">
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+
+    <!-- GAME CELL STYLE -->
+    <style name="GameCell">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_margin">4dp</item>
+
+        <item name="android:background">#222222</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/press_start_2p</item>
+
+        <!-- شكل مربع بدون انحناءات -->
+        <item name="shapeAppearance">@style/PixelShape</item>
+    </style>
+
+</resources>
